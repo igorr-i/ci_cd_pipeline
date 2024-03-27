@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  runningTests:
     runs-on: ubuntu-latest
     steps:
       #----------------------------------------------
