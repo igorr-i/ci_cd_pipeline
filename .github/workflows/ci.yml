@@ -33,4 +33,4 @@ jobs:
         run: poetry add pytest@8.1.1
 
       - name: Run tests
-        run: poetry run pytest src/test/
+        run: poetry run pytest -v src/test/
