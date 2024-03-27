@@ -1,5 +1,5 @@
 from src.validators.emailValidator import validate_email
-abcd = 1
+abcd = "   "
 
 def test_valid_email():
     """
