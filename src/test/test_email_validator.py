@@ -60,3 +60,5 @@ def test_email_without_dot():
     - None
     """
     assert validate_email('user@examplecom') == False
+
+# Linha em branco adicionada abaixo para violar a regra de remoção de linhas em branco no final do arquivo
