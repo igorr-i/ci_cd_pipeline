@@ -1,5 +1,7 @@
 from src.validators.emailValidator import validate_email
+
 abcd = "   "
+
 
 def test_valid_email():
     """
@@ -11,7 +13,8 @@ def test_valid_email():
     Returns:
     - None
     """
-    assert validate_email('user@example.com') == True
+    assert validate_email("user@example.com") == True
+
 
 def test_invalid_email():
     """
@@ -23,7 +26,8 @@ def test_invalid_email():
     Returns:
     - None
     """
-    assert validate_email('user.example.com') == False
+    assert validate_email("user.example.com") == False
+
 
 def test_empty_email():
     """
@@ -35,7 +39,8 @@ def test_empty_email():
     Returns:
     - None
     """
-    assert validate_email('') == False
+    assert validate_email("") == False
+
 
 def test_email_without_at():
     """
@@ -47,7 +52,8 @@ def test_email_without_at():
     Returns:
     - None
     """
-    assert validate_email('userexample.com') == False
+    assert validate_email("userexample.com") == False
+
 
 def test_email_without_dot():
     """
@@ -59,6 +65,7 @@ def test_email_without_dot():
     Returns:
     - None
     """
-    assert validate_email('user@examplecom') == False
+    assert validate_email("user@examplecom") == False
+
 
 # Linha em branco adicionada abaixo para violar a regra de remoção de linhas em branco no final do arquivo
