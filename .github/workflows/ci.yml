@@ -6,7 +6,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main", "stage"]
-    paths-ignore: .pre-commit-config.yaml
+    paths-ignore: [".pre-commit-config.yaml", "README.md"]
   pull_request:
     types: ["opened"]
     branches: [ "main", "stage"]
