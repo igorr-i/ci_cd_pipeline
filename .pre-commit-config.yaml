@@ -3,3 +3,20 @@ repos:
     rev: 24.3.0
     hooks:
       - id: black
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-xml
+      - id: check-toml
+      - id: check-added-large-files
+      - id: check-ast
+      - id: debug-statements
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: requirements-txt-fixer
