@@ -1,6 +1,7 @@
 import re
 
 
+# test skip ci
 def validate_email(email: str) -> bool:
     """
     Validate if the given string is a valid email address.
